@@ -1,5 +1,9 @@
 [
   {
+    "repository"  : "device_oneplus_common",
+    "target_path" : "device/oneplus/common"
+  },
+  {
     "repository": "android_kernel_oneplus_sdm845",
     "target_path": "kernel/oneplus/sdm845"
   },
@@ -8,6 +12,10 @@
     "target_path" : "vendor/oneplus"
   },
   {
-    "repository": "device_oneplus_common",
-    "target_path": "device/oneplus/common"
+    "remote"      : "gitlab",
+    "repository"  : "anierin.t.bliss/vendor_oneplus_camera",
+    "branch"      : "sdm845",
+    "clone-depth" : "1",
+    "target_path" : "vendor/oneplus/camera/sdm845"
+  }
 ]
