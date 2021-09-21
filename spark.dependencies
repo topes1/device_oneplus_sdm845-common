@@ -1,0 +1,13 @@
+[
+  {
+    "repository": "android_kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845"
+  },
+  {
+    "repository"  : "vendor_oneplus-new",
+    "target_path" : "vendor/oneplus"
+  },
+  {
+    "repository": "device_oneplus_common",
+    "target_path": "device/oneplus/common"
+]
