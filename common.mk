@@ -99,6 +99,7 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.adaptive_charging.rc \
     init.device_extras.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
@@ -191,6 +192,7 @@ PRODUCT_BOOT_JARS += \
 
 # Touch
 PRODUCT_PACKAGES += \
+    TouchGestures \
     lineage.touch@1.0-service.oneplus_sdm845
 
 # tri-state-key
