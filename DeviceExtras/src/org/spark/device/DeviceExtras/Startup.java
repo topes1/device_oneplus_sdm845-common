@@ -35,8 +35,10 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
 
         DeviceExtras.restoreSliderStates(context);
+        EarGainModeSwitch.restore(context);
         org.spark.device.DeviceExtras.doze.DozeUtils.checkDozeService(context);
         org.spark.device.DeviceExtras.kcal.KCalSettings.restore(context);
+        MicGainModeSwitch.restore(context);
         VibratorCallStrengthPreference.restore(context);
         VibratorNotifStrengthPreference.restore(context);
         VibratorStrengthPreference.restore(context);
