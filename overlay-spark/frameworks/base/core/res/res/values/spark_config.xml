@@ -25,7 +25,7 @@
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.android.touch.gestures.KeyHandler</item>
-        <item>org.evolution.device.DeviceExtras.KeyHandler</item>
+        <item>org.spark.device.DeviceExtras.KeyHandler</item>
     </string-array>
 
     <!-- Whether key handler sends intent when changing slider position -->

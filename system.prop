@@ -46,6 +46,9 @@ vendor.iop.enable_uxe=0
 # Media
 media.settings.xml=/system/etc/media_profiles_vendor.xml
 
+#Maintainer Name
+ro.spark.maintainer=Topes1
+
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
 ro.vendor.qti.core_ctl_min_cpu=2
