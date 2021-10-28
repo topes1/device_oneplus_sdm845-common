@@ -52,8 +52,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 30
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_TARGET_VNDK_VERSION := 31
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -171,11 +171,11 @@ PRODUCT_PACKAGES += \
     vendor.nxp.nxpnfc@1.0:64
 
 # OnePlus
-PRODUCT_PACKAGES += \
-    oneplus-fwk.oneplus_sdm845
-
-PRODUCT_BOOT_JARS += \
-    oneplus-fwk.oneplus_sdm845
+#PRODUCT_PACKAGES += \
+#    oneplus-fwk.oneplus_sdm845
+#
+#PRODUCT_BOOT_JARS += \
+#    oneplus-fwk.oneplus_sdm845
 
 # Power
 PRODUCT_PACKAGES += \
