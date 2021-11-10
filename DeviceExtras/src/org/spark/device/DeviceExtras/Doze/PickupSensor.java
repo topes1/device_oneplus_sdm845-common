@@ -76,8 +76,8 @@ public class PickupSensor implements SensorEventListener {
         if (event.values[0] == 1) {
             if (DozeUtils.isPickUpSetToWake(mContext)) {
                 mWakeLock.acquire(WAKELOCK_TIMEOUT_MS);
-                mPowerManager.wakeUpWithProximityCheck(SystemClock.uptimeMillis(),
-                        PowerManager.WAKE_REASON_GESTURE, TAG);
+                //mPowerManager.wakeUpWithProximityCheck(SystemClock.uptimeMillis(),
+                       // PowerManager.WAKE_REASON_GESTURE, TAG);
             } else {
                 DozeUtils.launchDozePulse(mContext);
             }

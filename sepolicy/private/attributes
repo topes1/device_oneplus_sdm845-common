@@ -1,5 +1,4 @@
 attribute hal_display;
 attribute hal_display_client;
 attribute hal_display_server;
-attribute hal_lineage_touch;
-attribute hal_lineage_touch_server;
+#attribute hal_lineage_touch;

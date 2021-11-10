@@ -16,12 +16,14 @@
 #
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Force disable updating of APEXes when flatten APEX flag is enabled
-ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
-PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
-endif
+#ifeq ($(OVERRIDE_TARGET_FLATTEN_APEX),true)
+#PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
+#endif
+
+OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
@@ -53,7 +55,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 31
-PRODUCT_EXTRA_VNDK_VERSIONS := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 29
 
 # Permissions
 PRODUCT_COPY_FILES += \
