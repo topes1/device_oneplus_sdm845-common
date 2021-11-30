@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2021 Spark OS
+# Copyright (C) 2021 Spark OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -102,6 +102,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Gcam \
     libcvface_api
 
 # Common init scripts
@@ -180,7 +181,7 @@ PRODUCT_BOOT_JARS += \
 # Power
 PRODUCT_PACKAGES += \
     power.qcom:64
-    
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
@@ -213,7 +214,6 @@ PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key_daemon
 
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -234,11 +234,11 @@ PRODUCT_PACKAGES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-gcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gcam.xml \
     $(LOCAL_PATH)/system_ext/etc/permissions/privapp-permissions-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-system_ext.xml

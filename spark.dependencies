@@ -4,15 +4,19 @@
     "target_path" : "device/oneplus/common"
   },
   {
-    "repository": "android_kernel_oneplus_sdm845",
-    "target_path": "kernel/oneplus/sdm845"
+    "repository"  : "kernel_oneplus_sdm845",
+    "target_path" : "kernel/oneplus/sdm845"
   },
   {
     "repository"  : "vendor_oneplus-new",
     "target_path" : "vendor/oneplus"
   },
   {
-    "repository"  : "ab_vendor_camera",
+    "repository"  : "vendor_oneplus-new",
+    "target_path" : "vendor/addons/oneplus/apps"
+  },
+  {
+    "repository"  : "anierin.t.bliss/vendor_oneplus_camera",
     "target_path" : "vendor/oneplus/camera/sdm845"
   }
 ]

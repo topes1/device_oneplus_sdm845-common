@@ -52,6 +52,7 @@
             android:title="@string/notification_slider_bottom_position"
             android:summary="%s" />
     </PreferenceCategory>
+    
 
     <PreferenceCategory
         android:key="cpu"

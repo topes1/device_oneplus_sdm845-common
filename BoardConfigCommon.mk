@@ -16,6 +16,8 @@
 
 BOARD_VENDOR := oneplus
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 COMMON_PATH := device/oneplus/sdm845-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include

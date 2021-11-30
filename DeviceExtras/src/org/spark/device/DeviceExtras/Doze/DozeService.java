@@ -52,6 +52,7 @@ public class DozeService extends Service {
 
     @Override
     public void onDestroy() {
+        if (DEBUG) Log.d(TAG, "Destroying service");
         super.onDestroy();
         this.unregisterReceiver(mScreenStateReceiver);
         mPickupSensor.disable();
@@ -64,6 +65,7 @@ public class DozeService extends Service {
     }
 
     private void onDisplayOn() {
+        if (DEBUG) Log.d(TAG, "Display on");
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.disable();
         }
@@ -73,6 +75,7 @@ public class DozeService extends Service {
     }
 
     private void onDisplayOff() {
+        if (DEBUG) Log.d(TAG, "Display off");
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.enable();
         }

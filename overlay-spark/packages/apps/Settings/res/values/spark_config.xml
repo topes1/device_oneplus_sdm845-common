@@ -16,4 +16,3 @@
     <!-- Adaptive Charging -->
     <bool name="config_supportAdaptiveCharging">true</bool>
 </resources>
-
